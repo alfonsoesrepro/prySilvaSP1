@@ -51,6 +51,7 @@
             cmdCancelar.TabIndex = 1;
             cmdCancelar.Text = "Aceptar";
             cmdCancelar.UseVisualStyleBackColor = true;
+            cmdCancelar.Click += cmdCancelar_Click;
             // 
             // frmMensaje
             // 

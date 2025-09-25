@@ -30,7 +30,7 @@
         {
             lblUsuario = new Label();
             lblContraseña = new Label();
-            txtNombre = new TextBox();
+            txtUsuario = new TextBox();
             txtContraseña = new TextBox();
             cmdAceptar = new Button();
             cmdCancelar = new Button();
@@ -55,12 +55,12 @@
             lblContraseña.TabIndex = 1;
             lblContraseña.Text = "Contraseña";
             // 
-            // txtNombre
+            // txtUsuario
             // 
-            txtNombre.Location = new Point(134, 41);
-            txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(114, 23);
-            txtNombre.TabIndex = 2;
+            txtUsuario.Location = new Point(134, 41);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(114, 23);
+            txtUsuario.TabIndex = 2;
             // 
             // txtContraseña
             // 
@@ -68,6 +68,7 @@
             txtContraseña.Name = "txtContraseña";
             txtContraseña.Size = new Size(114, 23);
             txtContraseña.TabIndex = 3;
+            txtContraseña.UseSystemPasswordChar = true;
             // 
             // cmdAceptar
             // 
@@ -97,7 +98,7 @@
             Controls.Add(cmdCancelar);
             Controls.Add(cmdAceptar);
             Controls.Add(txtContraseña);
-            Controls.Add(txtNombre);
+            Controls.Add(txtUsuario);
             Controls.Add(lblContraseña);
             Controls.Add(lblUsuario);
             Name = "frmInicioDeSesion";
@@ -110,7 +111,7 @@
 
         private Label lblUsuario;
         private Label lblContraseña;
-        private TextBox txtNombre;
+        private TextBox txtUsuario;
         private TextBox txtContraseña;
         private Button cmdAceptar;
         private Button cmdCancelar;

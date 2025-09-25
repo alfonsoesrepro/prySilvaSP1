@@ -12,22 +12,23 @@ namespace prySilva
 
         }
 
+        int intentos = 0;
+
         private void cmdAceptar_Click(object sender, EventArgs e)
         {
             //MessageBox.Show("Bienvenido " + txtNombre + "!", "Mensaje");
 
-            if ((txtNombre.Text == "Alfo" && txtContraseña.Text == "tuputamadre"))
+            if ((txtUsuario.Text == "Alfo" && txtContraseña.Text == "profeaprobame"))
             {
                 this.Hide();
                 frmMensaje f = new frmMensaje();
-                f.Text = txtNombre.Text;
+                f.Text = txtUsuario.Text;
                 f.ShowDialog();
                 this.Show();
             }
             else
             {
                 MessageBox.Show("Datos incorrectos. Acceso Denegado.");
-                int intentos = 0;
                 intentos++;
                 if (intentos == 3)
                 {
