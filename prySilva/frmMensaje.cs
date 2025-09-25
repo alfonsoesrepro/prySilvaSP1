@@ -21,5 +21,10 @@ namespace prySilva
         {
             this.Close();
         }
+
+        private void frmMensaje_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

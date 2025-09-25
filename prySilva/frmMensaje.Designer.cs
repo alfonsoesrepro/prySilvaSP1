@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            lblBienvenido = new Label();
             cmdCancelar = new Button();
             SuspendLayout();
             // 
-            // label1
+            // lblBienvenido
             // 
-            label1.AutoSize = true;
-            label1.BorderStyle = BorderStyle.Fixed3D;
-            label1.Font = new Font("Segoe UI", 40F, FontStyle.Bold);
-            label1.Location = new Point(63, 53);
-            label1.Name = "label1";
-            label1.Size = new Size(333, 74);
-            label1.TabIndex = 0;
-            label1.Text = "Bienvenido!";
+            lblBienvenido.AutoSize = true;
+            lblBienvenido.BorderStyle = BorderStyle.Fixed3D;
+            lblBienvenido.Font = new Font("Segoe UI", 40F, FontStyle.Bold);
+            lblBienvenido.Location = new Point(63, 53);
+            lblBienvenido.Name = "lblBienvenido";
+            lblBienvenido.Size = new Size(333, 74);
+            lblBienvenido.TabIndex = 0;
+            lblBienvenido.Text = "Bienvenido!";
             // 
             // cmdCancelar
             // 
@@ -59,16 +59,17 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(442, 251);
             Controls.Add(cmdCancelar);
-            Controls.Add(label1);
+            Controls.Add(lblBienvenido);
             Name = "frmMensaje";
             Text = "Mensaje";
+            Load += frmMensaje_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
+        private Label lblBienvenido;
         private Button cmdCancelar;
     }
 }
