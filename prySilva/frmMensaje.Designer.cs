@@ -61,6 +61,7 @@
             Controls.Add(cmdCancelar);
             Controls.Add(lblBienvenido);
             Name = "frmMensaje";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Mensaje";
             Load += frmMensaje_Load;
             ResumeLayout(false);
